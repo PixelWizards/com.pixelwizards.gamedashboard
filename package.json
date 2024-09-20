@@ -3,13 +3,14 @@
   "displayName": "Pixel Wizards - Game Dashboard",
   "version": "0.1.0-preview.1",
   "unity": "2018.4",
-  "description": null,
-  "category": null,
+  "description": "A simple Editor window that shows all of the scenes in your Build Settings",
+  "category": "Usability, Editor",
   "author": {
     "name": "Pixel Wizards",
     "email": "support@pixelwizards.ca",
     "url": "www.pixelwizards.ca"
   },
+  "documentationUrl": "https://www.github.com/pixelwizards/com.pixelwizards.gamedashboard",
   "keywords": [],
   "dependencies": {}
 }
