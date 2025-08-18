@@ -47,10 +47,20 @@ namespace PixelWizards.Utility.Editor
                 GUI.skin.button.alignment = TextAnchor.MiddleLeft;
                 foreach (var scene in scenes)
                 {
-                    if (GUILayout.Button(scene, GUILayout.MinHeight(100), GUILayout.Height(buttonHeight)))
+                    GUILayout.BeginHorizontal();
                     {
-                        EditorSceneManager.OpenScene(scene, OpenSceneMode.Single);
+                        if (GUILayout.Button(scene, GUILayout.MinHeight(100), GUILayout.Height(buttonHeight)))
+                        {
+                            EditorSceneManager.OpenScene(scene, OpenSceneMode.Single);
+                        }
+                        if(GUILayout.Button("Ping", GUILayout.MinHeight(100), GUILayout.Height(buttonHeight), GUILayout.Width(45f)))
+                        {
+                            var sceneAsset = AssetDatabase.LoadAssetAtPath<SceneAsset>(scene);
+                            Selection.activeObject = sceneAsset;
+                            EditorGUIUtility.PingObject(sceneAsset);
+                        }    
                     }
+                    GUILayout.EndHorizontal();
                 }
             }
             EditorGUILayout.EndScrollView();

@@ -1,11 +1,7 @@
 com.pixelwizards.dashboard
 =========================
 
-# Overview
+This is a simple editor window that gives you shortcuts to the scenes you have 
+added to the Build Settings of your project.
 
-This package provides a single editor window - a 'dashboard' of the scenes that are included in your Unity project's Build Settings. 
-
-You can open the Game Dashboard window by going to Tools -> Game Dashboard in the editor.
-
-![Main Window](Documentation~/Dashboard.png)
-
+Available under Tools->Game Dashboard
