@@ -8,4 +8,7 @@ Available under ***Tools->Game Dashboard***
 
 ***Show Disabled Scenes*** toggles scenes that are enabled / disabled in the Build Settings of your project.
 
-![GameDashboard](.\GameDashboard.png)
+![GameDashboard](https://github.com/PixelWizards/com.pixelwizards.gamedashboard/tree/main/Documentation~\GameDashboard.png)
+
+
+
